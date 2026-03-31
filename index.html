@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Fleur & Co — Luxury Florals</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- Custom Cursor -->
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-ring" id="cursorRing"></div>
+
+        <!-- Nav -->
+        <nav id="navbar">
+        <a href="#" class="nav-logo">Fleur <span>&</span> Co</a>
+        <ul class="nav-links">
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+        <a href="#collections" class="nav-cta">Shop Now</a>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">✕</button>
+            <a href="#collections" onclick="closeMobile()">Collections</a>
+            <a href="#about" onclick="closeMobile()">Our Story</a>
+            <a href="#process" onclick="closeMobile()">Process</a>
+            <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+            <a href="#newsletter" onclick="closeMobile()">Contact</a>
+        </div>
+
+        <!-- Hero -->
+        <section id="hero">
+            <div class="hero-left">
+                <div class="hero-tag">Luxury Florals Since 2018</div>
+                <h1 class="hero-h1">Where Flowers<br>Become <em>Stories</em></h1>
+                <p class="hero-desc">Hand-curated bouquets crafted with the rarest blooms, delivered to your door. Every arrangement is a poem — composed with love, elegance, and nature's finest beauty.</p>
+                <div class="hero-actions">
+                <a href="#collections" class="btn-primary">Explore Collections</a>
+                <a href="#about" class="btn-ghost">Our Story</a>
+                </div>
+                <div class="hero-stat">
+                <div class="stat"><h3>12k+</h3><p>Happy Clients</p></div>
+                <div class="stat"><h3>4.9★</h3><p>Average Rating</p></div>
+                <div class="stat"><h3>48h</h3><p>Fresh Delivery</p></div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-img-wrap">
+                <div class="petal-bg"></div>
+                <div class="big-flower">🌸</div>
+                <div class="badge-wrap">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                    <h4>Best Florist 2024</h4>
+                    <p>National Floral Awards</p>
+                    </div>
+                </div>
+                <div class="badge-wrap2">
+                    <p>New Arrival</p>
+                    <h4>Spring Edit '25</h4>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-item">Same-Day Delivery Available</div>
+                <div class="marquee-item">Handpicked Premium Blooms</div>
+                <div class="marquee-item">Sustainable Sourcing</div>
+                <div class="marquee-item">Custom Arrangements</div>
+                <div class="marquee-item">Wedding Specialists</div>
+                <div class="marquee-item">Same-Day Delivery Available</div>
+                <div class="marquee-item">Handpicked Premium Blooms</div>
+                <div class="marquee-item">Sustainable Sourcing</div>
+                <div class="marquee-item">Custom Arrangements</div>
+                <div class="marquee-item">Wedding Specialists</div>
+            </div>
+        </div>
+
+        <!-- Collections -->
+        <section id="collections">
+            <div class="collections-header">
+                <div>
+                <div class="section-tag reveal">Featured Collections</div>
+                <h2 class="section-title reveal reveal-delay-1">Nature's Finest,<br><em>Curated for You</em></h2>
+                </div>
+                <a href="collection.html" target="_blank" class="see-all reveal">View All</a>
+            </div>
+            <div class="cards-grid">
+                <div class="card reveal">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background: linear-gradient(145deg,#f9e4e4,#fdf0f0)"></div>
+                    <span class="card-tag">Bestseller</span>
+                    <div class="card-emoji">🌺</div>
+                </div>
+                <div class="card-body">
+                    <h3>Eternal Rose Bouquet</h3>
+                    <p>Velvet-soft roses in blush and cream, nestled with baby's breath and eucalyptus.</p>
+                    <div class="card-footer">
+                    <span class="price">$89</span>
+                    <button class="add-btn">+</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card reveal reveal-delay-1">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background: linear-gradient(145deg,#f3e8f5,#fdf4fe)"></div>
+                    <span class="card-tag">New</span>
+                    <div class="card-emoji">💐</div>
+                </div>
+                <div class="card-body">
+                    <h3>Spring Symphony</h3>
+                    <p>A vibrant medley of seasonal blooms — peonies, tulips, and sweet freesia.</p>
+                    <div class="card-footer">
+                    <span class="price">$112</span>
+                    <button class="add-btn">+</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background: linear-gradient(145deg,#e8f0e4,#f5faf2)"></div>
+                    <span class="card-tag">Limited</span>
+                    <div class="card-emoji">🌷</div>
+                </div>
+                <div class="card-body">
+                    <h3>Garden Reverie</h3>
+                    <p>Wild-garden style with ranunculus, garden roses, and trailing greenery.</p>
+                    <div class="card-footer">
+                    <span class="price">$135</span>
+                    <button class="add-btn">+</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card reveal reveal-delay-1">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background: linear-gradient(145deg,#fde8d0,#fef5ec)"></div>
+                    <span class="card-tag">Wedding</span>
+                    <div class="card-emoji">🌼</div>
+                </div>
+                <div class="card-body">
+                    <h3>Ivory Dream</h3>
+                    <p>All-white calla lilies and hydrangea for the most elegant occasions.</p>
+                    <div class="card-footer">
+                    <span class="price">$160</span>
+                    <button class="add-btn">+</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background: linear-gradient(145deg,#e8eaf5,#f0f2fd)"></div>
+                    <span class="card-tag">Popular</span>
+                    <div class="card-emoji">🪷</div>
+                </div>
+                <div class="card-body">
+                    <h3>Misty Lavender</h3>
+                    <p>Lavender sprigs, dusty miller, and soft lilac roses in a rustic wrap.</p>
+                    <div class="card-footer">
+                    <span class="price">$98</span>
+                    <button class="add-btn">+</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card reveal reveal-delay-3">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background: linear-gradient(145deg,#f5e4e4,#fef0e8)"></div>
+                    <span class="card-tag">Gift Set</span>
+                    <div class="card-emoji">🌹</div>
+                </div>
+                <div class="card-body">
+                    <h3>Velvet Luxe Box</h3>
+                    <p>A signature gift box: 12 premium roses, truffles, and a handwritten card.</p>
+                    <div class="card-footer">
+                    <span class="price">$195</span>
+                    <button class="add-btn">+</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="about-visual reveal">
+                <div class="about-main-img">🌸</div>
+                <div class="about-accent">🌿</div>
+                <div class="about-years">
+                <h3>6+</h3>
+                <p>Years of Bloom</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-tag reveal">Our Story</div>
+                <h2 class="section-title reveal reveal-delay-1">Born from a <em>Passion</em><br>for Beautiful Things</h2>
+                <p class="about-body reveal reveal-delay-2">Fleur & Co was born in a small Paris-inspired studio in 2018. Our founder Sophie believed flowers deserved more than just a vase — they deserved to be art. Today, we source the world's most beautiful blooms and compose them into arrangements that stir the soul.</p>
+                <div class="about-pillars reveal reveal-delay-2">
+                <div class="pillar">
+                    <div class="pillar-icon">🌱</div>
+                    <div>
+                    <h4>Sustainably Sourced</h4>
+                    <p>Every flower is ethically grown and harvested with care for the planet.</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">✂️</div>
+                    <div>
+                    <h4>Artisan Crafted</h4>
+                    <p>Each bouquet is hand-composed by our trained floral artisans.</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🚚</div>
+                    <div>
+                    <h4>Same-Day Delivery</h4>
+                    <p>Order by noon and your blooms arrive fresh before evening.</p>
+                    </div>
+                </div>
+                </div>
+                <a href="#collections" class="btn-primary reveal reveal-delay-3">Discover Our Work</a>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section id="process">
+            <div class="process-header">
+                <div class="section-tag reveal">How It Works</div>
+                <h2 class="section-title reveal reveal-delay-1">From <em>Garden</em> to Your Door</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step reveal">
+                <div class="step-num">01</div>
+                <div class="step-icon">🔍</div>
+                <h4>Browse & Choose</h4>
+                <p>Explore our curated collections and find the arrangement that speaks to you.</p>
+                </div>
+                <div class="step reveal reveal-delay-1">
+                <div class="step-num">02</div>
+                <div class="step-icon">✏️</div>
+                <h4>Personalise It</h4>
+                <p>Add a custom note, choose your wrapping, and personalise the bouquet.</p>
+                </div>
+                <div class="step reveal reveal-delay-2">
+                <div class="step-num">03</div>
+                <div class="step-icon">🌸</div>
+                <h4>We Craft With Love</h4>
+                <p>Our artisans hand-pick and compose every stem with meticulous care.</p>
+                </div>
+                <div class="step reveal reveal-delay-3">
+                <div class="step-num">04</div>
+                <div class="step-icon">🚚</div>
+                <h4>Delivered Fresh</h4>
+                <p>Your blooms are rushed to you in our signature packaging, still fresh.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <div class="testi-header">
+                <div class="section-tag reveal">Testimonials</div>
+                <h2 class="section-title reveal reveal-delay-1">Loved by Thousands<br><em>Around the World</em></h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"The most breathtaking bouquet I have ever received. The roses were impossibly soft and lasted nearly two weeks. Absolute luxury."</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">👩</div>
+                    <div class="reviewer-info">
+                    <h5>Isabelle Laurent</h5>
+                    <p>Paris, France</p>
+                    </div>
+                </div>
+                </div>
+                <div class="testi-card reveal reveal-delay-1">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"I ordered the Velvet Luxe Box for my wife's birthday — she cried happy tears. The packaging, the scent, the quality. Simply unmatched."</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">👨</div>
+                    <div class="reviewer-info">
+                    <h5>Marco Ricci</h5>
+                    <p>Milan, Italy</p>
+                    </div>
+                </div>
+                </div>
+                <div class="testi-card reveal reveal-delay-2">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Used Fleur & Co for our entire wedding florals. Every single guest asked who did the flowers. Pure elegance, delivered exactly on time."</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">👰</div>
+                    <div class="reviewer-info">
+                    <h5>Emma Whitfield</h5>
+                    <p>London, UK</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter">
+            <div class="section-tag reveal">Stay in Bloom</div>
+            <h2 class="section-title reveal reveal-delay-1">Get <em>First Access</em><br>to New Collections</h2>
+            <p class="reveal reveal-delay-2">Join our newsletter and receive seasonal inspiration, exclusive offers, and early access to limited editions — straight to your inbox.</p>
+            <div class="email-form reveal reveal-delay-3">
+                <input type="email" placeholder="Your email address..."/>
+                <button type="button">Subscribe</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top">
+                <div>
+                <div class="footer-logo">Fleur <span>&</span> Co</div>
+                <p class="footer-about">Luxury florals crafted with passion, delivered with care. Making every moment bloom since 2018.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn">📘</a>
+                    <a href="#" class="social-btn">📸</a>
+                    <a href="#" class="social-btn">🐦</a>
+                    <a href="#" class="social-btn">📌</a>
+                </div>
+                </div>
+                <div class="footer-col">
+                <h5>Shop</h5>
+                <ul>
+                    <li><a href="collection.html">All Collections</a></li>
+                    <li><a href="collection.html">New Arrivals</a></li>
+                    <li><a href="collection.html">Wedding Florals</a></li>
+                    <li><a href="collection.html">Gift Sets</a></li>
+                    <li><a href="#newsletter">Subscriptions</a></li>
+                </ul>
+                </div>
+                <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="info.html">Sustainability</a></li>
+                    <li><a href="info.html">Careers</a></li>
+                    <li><a href="info.html">Press</a></li>
+                    <li><a href="info.html">Blog</a></li>
+                </ul>
+                </div>
+                <div class="footer-col">
+                <h5>Help</h5>
+                <ul>
+                    <li><a href="info.html">Delivery Info</a></li>
+                    <li><a href="info.html">FAQs</a></li>
+                    <li><a href="info.html">Returns</a></li>
+                    <li><a href="info.html">Contact Us</a></li>
+                    <li><a href="info.html">Care Guide</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Fleur & Co. All rights reserved.</span>
+                <span>Privacy Policy · Terms of Service</span>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

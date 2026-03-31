@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Collections — Fleur & Co</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="collection.css">
+    </head>
+    <body>
+
+    <!-- Cursor -->
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Nav -->
+        <nav id="navbar">
+            <a href="index.html" class="nav-logo">Fleur <span>&</span> Co</a>
+            <ul class="nav-links">
+                <li><a href="index.html#collections">Collections</a></li>
+                <li><a href="index.html#about">Our Story</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#testimonials">Reviews</a></li>
+            </ul>
+            <a href="index.html#collections" class="nav-cta">Shop Now</a>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </nav>
+
+    <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">✕</button>
+            <a href="index.html" onclick="closeMobile()">Home</a>
+            <a href="index.html#collections" onclick="closeMobile()">Collections</a>
+            <a href="index.html#about" onclick="closeMobile()">Our Story</a>
+            <a href="index.html#process" onclick="closeMobile()">Process</a>
+            <a href="index.html#testimonials" onclick="closeMobile()">Reviews</a>
+        </div>
+
+    <!-- Page Hero -->
+        <div class="page-hero">
+            <div class="hero-inner">
+                <div class="hero-text">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    Collections
+                </div>
+                <h1 class="page-title">All <em>Collections</em></h1>
+                <p class="page-subtitle">Every arrangement is a story — explore our full range of handcrafted bouquets, gift sets, and seasonal specials.</p>
+                </div>
+                <div class="hero-petals">
+                <div class="petal-pill">
+                    <div class="emoji">🌸</div>
+                    <span>18 Bouquets</span>
+                </div>
+                <div class="petal-pill">
+                    <div class="emoji">🎁</div>
+                    <span>6 Gift Sets</span>
+                </div>
+                <div class="petal-pill">
+                    <div class="emoji">🌿</div>
+                    <span>Seasonal</span>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Marquee -->
+        <div class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-item">Handpicked Blooms</div>
+                <div class="marquee-item">Same-Day Delivery</div>
+                <div class="marquee-item">Ethically Sourced</div>
+                <div class="marquee-item">Custom Arrangements</div>
+                <div class="marquee-item">Wedding Specialists</div>
+                <div class="marquee-item">Handpicked Blooms</div>
+                <div class="marquee-item">Same-Day Delivery</div>
+                <div class="marquee-item">Ethically Sourced</div>
+                <div class="marquee-item">Custom Arrangements</div>
+                <div class="marquee-item">Wedding Specialists</div>
+            </div>
+        </div>
+
+    <!-- Filter Bar -->
+        <div class="filter-section">
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="bouquets">Bouquets</button>
+                <button class="filter-tab" data-filter="gift">Gift Sets</button>
+                <button class="filter-tab" data-filter="wedding">Wedding</button>
+                <button class="filter-tab" data-filter="seasonal">Seasonal</button>
+                <button class="filter-tab" data-filter="subscription">Subscriptions</button>
+            </div>
+            <div class="filter-right">
+                <span class="result-count" id="resultCount">Showing 12 items</span>
+                <select class="sort-select" id="sortSelect">
+                <option>Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Best Rated</option>
+                <option>New Arrivals</option>
+                </select>
+                <div class="view-toggle">
+                <button class="view-btn active" data-view="3" title="3-column grid">▦</button>
+                <button class="view-btn" data-view="2" title="2-column grid">▥</button>
+                <button class="view-btn" data-view="1" title="List view">☰</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Collections Grid -->
+        <div class="collections-section">
+            <div class="grid-3" id="productsGrid">
+
+                <!-- Featured Card -->
+                <div class="card card-featured reveal" data-category="bouquets" data-price="89" data-rating="4.9">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#f9e4e4,#fdf0f0)"></div>
+                        <div class="card-badges"><span class="badge dark">Bestseller</span><span class="badge">New Season</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌺</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Bouquets</div>
+                        <h3>Eternal Rose Bouquet</h3>
+                        <p>Velvet-soft roses in blush and cream, nestled with baby's breath, eucalyptus, and delicate foliage. Our signature arrangement.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 4.9 (248)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$89</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-1" data-category="bouquets" data-price="112" data-rating="4.8">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#f3e8f5,#fdf4fe)"></div>
+                        <div class="card-badges"><span class="badge">New</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">💐</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Bouquets</div>
+                        <h3>Spring Symphony</h3>
+                        <p>Peonies, tulips, and sweet freesia in a vibrant spring medley. A celebration of colour and fragrance.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 4.8 (181)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$112</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-2" data-category="seasonal" data-price="135" data-rating="4.9">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#e8f0e4,#f5faf2)"></div>
+                        <div class="card-badges"><span class="badge">Limited</span><span class="badge">Seasonal</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌷</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Seasonal</div>
+                        <h3>Garden Reverie</h3>
+                        <p>Wild-garden style with ranunculus, garden roses, and trailing greenery — nature's most poetic arrangement.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 4.9 (96)</div>
+                        <div class="card-delivery">🚚 Next-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$135</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal" data-category="wedding" data-price="160" data-rating="5.0">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#fde8d0,#fef5ec)"></div>
+                        <div class="card-badges"><span class="badge">Wedding</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌼</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Wedding</div>
+                        <h3>Ivory Dream</h3>
+                        <p>All-white calla lilies and hydrangea for the most elegant, timeless occasions. Custom sizing available.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 5.0 (62)</div>
+                        <div class="card-delivery">📅 By arrangement</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$160</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-1" data-category="bouquets" data-price="98" data-rating="4.7">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#e8eaf5,#f0f2fd)"></div>
+                        <div class="card-badges"><span class="badge">Popular</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🪷</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Bouquets</div>
+                        <h3>Misty Lavender</h3>
+                        <p>Lavender sprigs, dusty miller, and soft lilac roses wrapped in a rustic, romantic style.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★☆</span> 4.7 (134)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$98</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-2" data-category="gift" data-price="195" data-rating="5.0">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#f5e4e4,#fef0e8)"></div>
+                        <div class="card-badges"><span class="badge dark">Gift Set</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌹</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Gift Sets</div>
+                        <h3>Velvet Luxe Box</h3>
+                        <p>12 premium roses, artisan truffles, and a handwritten card in our signature gift box.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 5.0 (208)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$195</span><span class="price-old">$220</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal" data-category="seasonal" data-price="78" data-rating="4.8">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#fff5e0,#fffbf0)"></div>
+                        <div class="card-badges"><span class="badge">Seasonal</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌻</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Seasonal</div>
+                        <h3>Golden Hour</h3>
+                        <p>Sunflowers and golden chrysanthemums, warm as late afternoon light. A joyful burst of sunshine.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 4.8 (77)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$78</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-1" data-category="subscription" data-price="65" data-rating="4.9">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#e4f0f5,#f0f8fd)"></div>
+                        <div class="card-badges"><span class="badge dark">Subscription</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌸</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Subscriptions</div>
+                        <h3>Weekly Bloom Box</h3>
+                        <p>Fresh handpicked blooms delivered every week — curated by season, always a surprise, always beautiful.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 4.9 (322)</div>
+                        <div class="card-delivery">📅 Weekly</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$65</span><span class="price-old" style="font-size:.7rem;color:var(--deep-rose)">/ week</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-2" data-category="wedding" data-price="240" data-rating="5.0">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#f0e8f4,#fdf4fe)"></div>
+                        <div class="card-badges"><span class="badge">Wedding</span><span class="badge dark">Premium</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">💮</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Wedding</div>
+                        <h3>Bridal Arch Florals</h3>
+                        <p>A full floral arch arrangement using garden roses, peonies, and lush greenery. Custom to your venue.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 5.0 (44)</div>
+                        <div class="card-delivery">📅 By arrangement</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">from $240</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal" data-category="gift" data-price="145" data-rating="4.8">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#fde8e8,#fff2f2)"></div>
+                        <div class="card-badges"><span class="badge">Gift Set</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🎀</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Gift Sets</div>
+                        <h3>Blush & Bloom Gift</h3>
+                        <p>A blush rose bouquet paired with a scented candle and personalised ribbon — the perfect romantic gesture.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★★</span> 4.8 (159)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                        </div>
+                        <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$145</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal reveal-delay-1" data-category="bouquets" data-price="88" data-rating="4.7">
+                    <div class="card-img">
+                        <div class="card-img-bg" style="background:linear-gradient(145deg,#e8f4e4,#f4faf2)"></div>
+                        <div class="card-badges"><span class="badge">Eco Choice</span></div>
+                        <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                        <div class="card-emoji">🌿</div>
+                    </div>
+                <div class="card-body">
+                    <div class="card-category">Bouquets</div>
+                        <h3>Wild Green Meadow</h3>
+                        <p>Lush ferns, eucalyptus, and white anemones in a free-form, natural wild meadow arrangement.</p>
+                        <div class="card-meta">
+                        <div class="card-rating"><span>★★★★☆</span> 4.7 (88)</div>
+                        <div class="card-delivery">🚚 Same-day</div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price-wrap"><span class="price">$88</span></div>
+                        <button class="add-btn" onclick="addToCart(this)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card reveal reveal-delay-2" data-category="subscription" data-price="110" data-rating="4.9">
+                <div class="card-img">
+                    <div class="card-img-bg" style="background:linear-gradient(145deg,#f8e8f4,#fef2fc)"></div>
+                    <div class="card-badges"><span class="badge dark">Subscription</span><span class="badge">Best Value</span></div>
+                    <button class="wishlist-btn" onclick="toggleWish(this)">🤍</button>
+                    <div class="card-emoji">🌺</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Subscriptions</div>
+                    <h3>Luxury Monthly Edit</h3>
+                    <p>Our most curated subscription — one extraordinary large arrangement each month, chosen by our head florist.</p>
+                    <div class="card-meta">
+                    <div class="card-rating"><span>★★★★★</span> 4.9 (211)</div>
+                    <div class="card-delivery">📅 Monthly</div>
+                    </div>
+                    <div class="card-footer">
+                    <div class="price-wrap"><span class="price">$110</span><span class="price-old" style="font-size:.7rem;color:var(--deep-rose)">/ month</span></div>
+                    <button class="add-btn" onclick="addToCart(this)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /grid -->
+        </div><!-- /collections-section -->
+
+    <!-- Pagination -->
+        <div class="pagination">
+            <button class="page-btn arrow">‹</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span style="color:var(--text-light);font-size:.9rem">…</span>
+            <button class="page-btn">8</button>
+            <button class="page-btn arrow">›</button>
+        </div>
+
+    <!-- Promise Strip -->
+        <div class="promise-strip">
+            <div class="promise reveal">
+                <div class="promise-icon">🌱</div>
+                <h4>Sustainably Sourced</h4>
+                <p>Every bloom ethically grown and harvested with care for our planet.</p>
+            </div>
+            <div class="promise reveal reveal-delay-1">
+                <div class="promise-icon">✂️</div>
+                <h4>Artisan Crafted</h4>
+                <p>Hand-composed by trained floral artisans, one bouquet at a time.</p>
+            </div>
+            <div class="promise reveal reveal-delay-2">
+                <div class="promise-icon">🚚</div>
+                <h4>Same-Day Delivery</h4>
+                <p>Order by noon, receive your blooms fresh before evening.</p>
+            </div>
+            <div class="promise reveal reveal-delay-3">
+                <div class="promise-icon">💳</div>
+                <h4>Secure Checkout</h4>
+                <p>Encrypted, safe payment with full purchase protection guaranteed.</p>
+            </div>
+        </div>
+
+    <!-- Footer -->
+        <footer>
+            <div class="footer-bottom">
+                <span>© 2025 Fleur & Co. All rights reserved.</span>
+                <span>Privacy Policy · Terms of Service</span>
+            </div>
+        </footer>
+
+        <!-- Quick View Modal -->
+        <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+            <div class="modal" id="modal">
+                <button class="modal-close" onclick="closeModalBtn()">✕</button>
+                <div class="modal-inner" id="modalInner"></div>
+            </div>
+        </div>
+
+        <script src="collection.js"></script>
+</body>
+</html>

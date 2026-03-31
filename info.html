@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Information — Fleur & Co</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="info.css"/>
+    </head>
+    <body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Nav -->
+    <nav id="navbar">
+    <a href="index.html" class="nav-logo">Fleur <span>&</span> Co</a>
+    <ul class="nav-links">
+        <li><a href="index.html#collection">Collections</a></li>
+        <li><a href="index.html#about">Our Story</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+    </ul>
+    <a href="index.html#collection" class="nav-cta">Shop Now</a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html" onclick="closeMobile()">Home</a>
+    <a href="index.html#collection" onclick="closeMobile()">Collections</a>
+    <a href="#sustainability" onclick="closeMobile()">Sustainability</a>
+    <a href="#careers" onclick="closeMobile()">Careers</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+    <div class="hero-inner">
+        <div>
+        <div class="breadcrumb">
+            <a href="fleur_landing.html">Home</a>
+            <span>/</span>
+            Information
+        </div>
+        <h1 class="page-title">Everything You<br>Need to <em>Know</em></h1>
+        <p class="page-subtitle">From our sustainability pledge to care guides, FAQs and careers — all the information about Fleur & Co, gathered in one beautiful place.</p>
+        </div>
+        <div class="quick-nav">
+        <a href="#sustainability"><span class="dot"></span>Sustainability</a>
+        <a href="#careers"><span class="dot"></span>Careers</a>
+        <a href="#press"><span class="dot"></span>Press</a>
+        <a href="#blog"><span class="dot"></span>Blog</a>
+        <a href="#delivery"><span class="dot"></span>Delivery</a>
+        <a href="#faqs"><span class="dot"></span>FAQs</a>
+        <a href="#returns"><span class="dot"></span>Returns</a>
+        <a href="#contact"><span class="dot"></span>Contact</a>
+        <a href="#care"><span class="dot"></span>Care Guide</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="layout">
+
+    <!-- Sticky Side Nav -->
+    <nav class="side-nav" id="sideNav">
+        <div class="side-nav-title">Company</div>
+        <a href="#sustainability" class="side-link">Sustainability</a>
+        <a href="#careers" class="side-link">Careers</a>
+        <a href="#press" class="side-link">Press</a>
+        <a href="#blog" class="side-link">Blog</a>
+        <div class="side-nav-title">Support</div>
+        <a href="#delivery" class="side-link">Delivery Info</a>
+        <a href="#faqs" class="side-link">FAQs</a>
+        <a href="#returns" class="side-link">Returns</a>
+        <a href="#contact" class="side-link">Contact Us</a>
+        <div class="side-nav-title">Flowers</div>
+        <a href="#care" class="side-link">Care Guide</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- ── SUSTAINABILITY ── -->
+        <section class="info-section reveal" id="sustainability">
+        <div class="section-tag">Our Planet</div>
+        <h2 class="section-title">Blooming <em>Responsibly</em></h2>
+        <p class="section-lead">At Fleur & Co, beauty and responsibility are inseparable. Every decision we make — from the farms we partner with to the ribbon we wrap your bouquet in — is guided by our commitment to a greener world.</p>
+
+        <div class="cards-row reveal">
+            <div class="info-card">
+            <div class="info-card-icon">🌱</div>
+            <h4>Ethical Sourcing</h4>
+            <p>We work exclusively with Rainforest Alliance–certified farms that prioritise fair wages, safe conditions, and biodiversity.</p>
+            </div>
+            <div class="info-card">
+            <div class="info-card-icon">♻️</div>
+            <h4>Zero-Waste Packaging</h4>
+            <p>All our packaging is 100% compostable or recycled. Our signature ribbon is made from organic cotton — no single-use plastic, ever.</p>
+            </div>
+            <div class="info-card">
+            <div class="info-card-icon">🚗</div>
+            <h4>Carbon-Neutral Delivery</h4>
+            <p>We offset 100% of delivery emissions through verified reforestation projects. Our local routes use electric vehicles.</p>
+            </div>
+        </div>
+
+        <div class="highlight-strip reveal">
+            <div class="hs-icon">🌍</div>
+            <div>
+            <h4>Our 2025 Pledge</h4>
+            <p>By the end of 2025, Fleur & Co will be fully carbon-neutral across our entire supply chain — from seed to doorstep. We plant one tree for every order placed.</p>
+            <a href="#">Read Our Full Sustainability Report</a>
+            </div>
+        </div>
+
+        <div class="prose reveal">
+            <h4>Local Sourcing Wherever Possible</h4>
+            <p>Wherever seasonally possible we source from UK and European growers, drastically reducing air freight miles. Our seasonal edits — Spring, Summer, Autumn, and Winter — are designed entirely around what is naturally flourishing, not what can be forced.</p>
+            <h4>Community Impact</h4>
+            <p>5% of all profits go directly to our <strong>Bloom Forward</strong> fund, which supports urban greening projects, school garden programmes, and mental health initiatives that use floristry as therapy across the UK.</p>
+        </div>
+        </section>
+
+        <!-- ── CAREERS ── -->
+        <section class="info-section reveal" id="careers">
+        <div class="section-tag">Join the Team</div>
+        <h2 class="section-title">Grow With <em>Us</em></h2>
+        <p class="section-lead">We are always looking for passionate, creative people who believe that beauty has the power to move people. Life at Fleur & Co is fragrant, fast-paced, and deeply fulfilling.</p>
+
+        <div class="cards-row cards-row-2 reveal">
+            <div class="info-card">
+            <div class="info-card-icon">🌸</div>
+            <h4>Creative Culture</h4>
+            <p>Weekly workshops, floral design training, and a studio environment that celebrates craft and artistry every single day.</p>
+            </div>
+            <div class="info-card">
+            <div class="info-card-icon">💰</div>
+            <h4>Competitive Benefits</h4>
+            <p>Competitive salary, generous employee discount, flexible working, wellness allowance, and 28 days annual leave.</p>
+            </div>
+            <div class="info-card">
+            <div class="info-card-icon">📈</div>
+            <h4>Real Growth</h4>
+            <p>Clear progression pathways, mentorship from senior artisans, and a leadership development programme for ambitious team members.</p>
+            </div>
+            <div class="info-card info-card-dark">
+            <div class="info-card-icon">🌍</div>
+            <h4>Diverse & Inclusive</h4>
+            <p>We are proudly B Corp certified and actively foster a workplace where every background, story, and perspective is celebrated.</p>
+            </div>
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;margin-bottom:20px;" class="reveal">Open <em>Positions</em></h3>
+        <div class="job-list reveal">
+            <div class="job-card">
+            <div class="job-info">
+                <h4>Head Floral Artisan</h4>
+                <div class="job-meta">
+                <span class="job-tag">London</span>
+                <span class="job-tag">Full-time</span>
+                <span class="job-tag">Senior</span>
+                </div>
+            </div>
+            <button class="apply-btn" onclick="applyJob(this,'Head Floral Artisan')">Apply Now</button>
+            </div>
+            <div class="job-card">
+            <div class="job-info">
+                <h4>Brand & Marketing Manager</h4>
+                <div class="job-meta">
+                <span class="job-tag">Hybrid</span>
+                <span class="job-tag">Full-time</span>
+                <span class="job-tag">Mid-level</span>
+                </div>
+            </div>
+            <button class="apply-btn" onclick="applyJob(this,'Brand & Marketing Manager')">Apply Now</button>
+            </div>
+            <div class="job-card">
+            <div class="job-info">
+                <h4>Floral Delivery Driver</h4>
+                <div class="job-meta">
+                <span class="job-tag">London</span>
+                <span class="job-tag">Part-time</span>
+                <span class="job-tag">Entry-level</span>
+                </div>
+            </div>
+            <button class="apply-btn" onclick="applyJob(this,'Floral Delivery Driver')">Apply Now</button>
+            </div>
+            <div class="job-card">
+            <div class="job-info">
+                <h4>E-Commerce & UX Designer</h4>
+                <div class="job-meta">
+                <span class="job-tag">Remote</span>
+                <span class="job-tag">Full-time</span>
+                <span class="job-tag">Mid-level</span>
+                </div>
+            </div>
+            <button class="apply-btn" onclick="applyJob(this,'E-Commerce & UX Designer')">Apply Now</button>
+            </div>
+            <div class="job-card">
+            <div class="job-info">
+                <h4>Customer Happiness Specialist</h4>
+                <div class="job-meta">
+                <span class="job-tag">Hybrid</span>
+                <span class="job-tag">Full-time</span>
+                <span class="job-tag">Entry-level</span>
+                </div>
+            </div>
+            <button class="apply-btn" onclick="applyJob(this,'Customer Happiness Specialist')">Apply Now</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- ── PRESS ── -->
+        <section class="info-section reveal" id="press">
+        <div class="section-tag">In the News</div>
+        <h2 class="section-title">Fleur & Co in the <em>Press</em></h2>
+        <p class="section-lead">We have been honoured to receive coverage from some of the world's most respected publications. For press enquiries and media assets, please reach out to our press team.</p>
+
+        <div class="press-grid reveal">
+            <div class="press-card">
+            <div class="press-icon">📰</div>
+            <h4>Vogue Living</h4>
+            <p>"The most exquisite florals we have encountered — each bouquet a wearable work of art."</p>
+            <br/><a href="#">Read Article →</a>
+            </div>
+            <div class="press-card">
+            <div class="press-icon">🏆</div>
+            <h4>National Floral Awards</h4>
+            <p>Winner — Best Luxury Florist 2024. Judges praised our consistency, creativity, and commitment to sustainability.</p>
+            <br/><a href="#">View Award →</a>
+            </div>
+            <div class="press-card">
+            <div class="press-icon">📖</div>
+            <h4>The Sunday Times</h4>
+            <p>Featured in "The 50 Best Luxury Brands in Britain" — the only florist to make the list two years running.</p>
+            <br/><a href="#">Read Feature →</a>
+            </div>
+            <div class="press-card">
+            <div class="press-icon">🎙️</div>
+            <h4>BBC Radio 4</h4>
+            <p>Our founder Sophie was interviewed on the psychology of flowers and their role in emotional wellbeing.</p>
+            <br/><a href="#">Listen →</a>
+            </div>
+            <div class="press-card">
+            <div class="press-icon">🌐</div>
+            <h4>Business Insider</h4>
+            <p>"How Fleur & Co turned a passion project into a £12m luxury floral empire in just six years."</p>
+            <br/><a href="#">Read Story →</a>
+            </div>
+            <div class="press-card">
+            <div class="press-icon">📸</div>
+            <h4>Architectural Digest</h4>
+            <p>Featured in "The Most Beautiful Floral Arrangements of 2024" — a full editorial spread.</p>
+            <br/><a href="#">View Spread →</a>
+            </div>
+        </div>
+
+        <div class="highlight-strip reveal" style="background:linear-gradient(135deg,#3a2626 0%,#5a3636 100%)">
+            <div class="hs-icon">📬</div>
+            <div>
+            <h4>Press & Media Enquiries</h4>
+            <p>For interviews, editorial features, product loans, or brand partnerships, please contact our press team directly. We typically respond within 24 hours.</p>
+            <a href="#contact">Contact Our Press Team</a>
+            </div>
+        </div>
+        </section>
+
+        <!-- ── BLOG ── -->
+        <section class="info-section reveal" id="blog">
+        <div class="section-tag">Stories & Inspiration</div>
+        <h2 class="section-title">From Our <em>Journal</em></h2>
+        <p class="section-lead">Floral inspiration, care wisdom, seasonal guides, and behind-the-scenes stories — written with love by the Fleur & Co team.</p>
+
+        <div class="blog-grid reveal">
+            <div class="blog-card">
+            <div class="blog-thumb" style="background:linear-gradient(145deg,#f9e4e4,#fdf0f0)">
+                <span class="blog-date">March 2025</span>
+                🌹
+            </div>
+            <div class="blog-body">
+                <div class="blog-cat">Seasonal Guide</div>
+                <h4>The Spring Edit: Which Blooms to Choose This Season</h4>
+                <p>From peonies to sweet peas, our head florist Sophie walks you through the most beautiful flowers of spring and how to style them at home.</p>
+                <a href="#" class="read-more">Read Article</a>
+            </div>
+            </div>
+            <div class="blog-card">
+            <div class="blog-thumb" style="background:linear-gradient(145deg,#e8f0e4,#f5faf2)">
+                <span class="blog-date">February 2025</span>
+                🌿
+            </div>
+            <div class="blog-body">
+                <div class="blog-cat">Sustainability</div>
+                <h4>Why We Chose to Go Packaging-Free (And How We Did It)</h4>
+                <p>The full story of our 18-month journey to eliminate all single-use plastic from our supply chain — the challenges, the wins, and what's next.</p>
+                <a href="#" class="read-more">Read Article</a>
+            </div>
+            </div>
+            <div class="blog-card">
+            <div class="blog-thumb" style="background:linear-gradient(145deg,#f3e8f5,#fdf4fe)">
+                <span class="blog-date">January 2025</span>
+                💐
+            </div>
+            <div class="blog-body">
+                <div class="blog-cat">Design & Style</div>
+                <h4>How to Style Flowers Like a Professional Florist at Home</h4>
+                <p>Our five non-negotiable rules for arranging flowers beautifully — no formal training required. Just a little patience and a good eye.</p>
+                <a href="#" class="read-more">Read Article</a>
+            </div>
+            </div>
+            <div class="blog-card">
+            <div class="blog-thumb" style="background:linear-gradient(145deg,#fde8d0,#fef5ec)">
+                <span class="blog-date">December 2024</span>
+                🌸
+            </div>
+            <div class="blog-body">
+                <div class="blog-cat">Wellbeing</div>
+                <h4>The Science of Flowers and Happiness — What Research Actually Says</h4>
+                <p>We spoke to behavioural scientists and psychologists about the measurable impact fresh flowers have on mood, stress, and creativity.</p>
+                <a href="#" class="read-more">Read Article</a>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ── DELIVERY ── -->
+        <section class="info-section reveal" id="delivery">
+        <div class="section-tag">Shipping & Delivery</div>
+        <h2 class="section-title">Fresh to Your <em>Door</em></h2>
+        <p class="section-lead">We go to extraordinary lengths to ensure your blooms arrive in peak condition — fresh, fragrant, and exactly as beautiful as when they left our studio.</p>
+
+        <table class="info-table reveal">
+            <thead>
+            <tr>
+                <th>Delivery Option</th>
+                <th>Timeframe</th>
+                <th>Cost</th>
+                <th>Available</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td><strong>Same-Day Delivery</strong></td><td>Order before 12pm</td><td>£9.95</td><td>Mon – Sat</td></tr>
+            <tr><td><strong>Next-Day Delivery</strong></td><td>Order before 5pm</td><td>£6.95</td><td>Mon – Sun</td></tr>
+            <tr><td><strong>Standard Delivery</strong></td><td>2–3 working days</td><td>£4.95</td><td>Mon – Sun</td></tr>
+            <tr><td><strong>Free Delivery</strong></td><td>3–5 working days</td><td><span class="tag-free">Free</span></td><td>Orders over £80</td></tr>
+            <tr><td><strong>Sunday Premium</strong></td><td>Specified Sunday slot</td><td>£14.95</td><td>Sundays only</td></tr>
+            <tr><td><strong>Click & Collect</strong></td><td>Ready in 2 hours</td><td><span class="tag-free">Free</span></td><td>Studio only</td></tr>
+            </tbody>
+        </table>
+
+        <div class="steps reveal">
+            <div class="step-row">
+            <div class="step-num-circle">1</div>
+            <div class="step-content">
+                <h4>Order Confirmed</h4>
+                <p>You receive an instant order confirmation with your estimated delivery window and tracking details.</p>
+            </div>
+            </div>
+            <div class="step-row">
+            <div class="step-num-circle">2</div>
+            <div class="step-content">
+                <h4>Artisan Assembly</h4>
+                <p>Our florists hand-pick and compose your arrangement fresh on the morning of dispatch, never the day before.</p>
+            </div>
+            </div>
+            <div class="step-row">
+            <div class="step-num-circle">3</div>
+            <div class="step-content">
+                <h4>Packaged with Care</h4>
+                <p>Blooms are wrapped in our compostable signature paper with an aqua sachet to keep stems hydrated in transit.</p>
+            </div>
+            </div>
+            <div class="step-row">
+            <div class="step-num-circle">4</div>
+            <div class="step-content">
+                <h4>Real-Time Tracking</h4>
+                <p>You and your recipient receive a live tracking link via SMS so you always know exactly where your flowers are.</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="highlight-strip reveal" style="background:linear-gradient(135deg,var(--deep-rose),#7a3838)">
+            <div class="hs-icon">📦</div>
+            <div>
+            <h4>Missed Delivery?</h4>
+            <p>If no one is home, we leave your flowers in a safe, shaded spot and send photo confirmation. Alternatively, contact us within 2 hours to redirect to a neighbour or alternative address.</p>
+            <a href="#contact">Contact Support</a>
+            </div>
+        </div>
+        </section>
+
+        <!-- ── FAQs ── -->
+        <section class="info-section reveal" id="faqs">
+        <div class="section-tag">Questions Answered</div>
+        <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+        <p class="section-lead">Everything you might want to know, answered honestly and thoroughly. Can't find what you need? Our team is always happy to help.</p>
+
+        <div class="faq-list reveal">
+            <div class="faq-item open">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                How fresh are the flowers when they arrive?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">All our flowers are cut and assembled on the morning of dispatch — never the night before. We source from growers who harvest 24–48 hours prior, meaning you receive blooms at the very start of their vase life. With proper care, most arrangements last 7–14 days.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Can I customise or personalise my bouquet?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">Yes — most of our bouquets can be customised in size (small, medium, or large) and we offer a free handwritten card with every order. For fully bespoke arrangements, please contact us at least 72 hours in advance and our artisans will create something tailored entirely to your vision.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                What if a flower variety isn't available?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">Occasionally, due to seasonal supply, a specific bloom may not be available. In this case, our florists will substitute with something of equal or greater value, maintaining the overall colour palette and style of your chosen arrangement. You will always be notified if a substitution is made.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Do you deliver internationally?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">We currently deliver across the United Kingdom. For international orders or special arrangements, please contact our team directly — we have trusted partner florists in France, Italy, and Germany who we can coordinate deliveries with for significant occasions.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                How do subscriptions work?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">Subscriptions are billed automatically on the same date each cycle (weekly or monthly). You can pause, skip, or cancel at any time from your account dashboard — no minimum term, no cancellation fees. Subscribers receive priority delivery slots and a 10% discount on all one-off purchases.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Are your flowers safe for pets?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">Some flowers — including lilies, tulips, and daffodils — can be toxic to cats and dogs. We always recommend keeping arrangements out of reach of pets. When placing an order, you can add a note requesting a pet-safe arrangement and we will compose something beautiful using only non-toxic varieties such as roses, sunflowers, and orchids.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Can I order for a wedding or large event?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">Absolutely — weddings and events are one of our specialities. We offer complimentary consultation calls with our senior florists, mood board creation, and a dedicated event coordinator. Please book at least 8 weeks in advance for weddings. Contact us using the form below to begin your enquiry.</div>
+            </div>
+            <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                What payment methods do you accept?
+                <span class="arrow">+</span>
+            </button>
+            <div class="faq-a">We accept all major credit and debit cards (Visa, Mastercard, Amex), Apple Pay, Google Pay, and PayPal. All transactions are secured with 256-bit SSL encryption. We also offer Klarna — buy now, pay in 3 interest-free instalments — for orders over £60.</div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ── RETURNS ── -->
+        <section class="info-section reveal" id="returns">
+        <div class="section-tag">Our Promise</div>
+        <h2 class="section-title">Returns & Our <em>Guarantee</em></h2>
+        <p class="section-lead">We stand behind every arrangement we create. If you are not completely delighted with your flowers, we will make it right — no awkward questions, no lengthy processes.</p>
+
+        <div class="returns-steps reveal">
+            <div class="return-step">
+            <div class="r-num">01</div>
+            <div class="r-icon">📸</div>
+            <h4>Send Us a Photo</h4>
+            <p>Within 48 hours of delivery, take a photo of the issue and contact us via email or our chat — takes less than 2 minutes.</p>
+            </div>
+            <div class="return-step">
+            <div class="r-num">02</div>
+            <div class="r-icon">💬</div>
+            <h4>We Review Instantly</h4>
+            <p>Our team reviews every issue personally, usually within 2 hours during business hours. No automated bots, ever.</p>
+            </div>
+            <div class="return-step">
+            <div class="r-num">03</div>
+            <div class="r-icon">🎁</div>
+            <h4>Full Resolution</h4>
+            <p>We issue a full replacement bouquet, store credit, or complete refund — whichever you prefer. No return needed.</p>
+            </div>
+        </div>
+
+        <div class="prose reveal">
+            <h4>What We Cover</h4>
+            <p>Our guarantee covers all issues related to quality: wilted or damaged flowers on arrival, missing items, incorrect arrangements, or anything that falls short of your expectations. We also cover delayed deliveries that cause the arrangement to be unusable.</p>
+            <h4>What Falls Outside Our Policy</h4>
+            <p>As perishable, living products, flowers cannot be returned physically. Our policy covers quality issues reported within <strong>48 hours of delivery</strong>. Issues arising from improper care after delivery (not following the care guide, exposure to extreme heat, etc.) may not be covered, though we always try to help regardless.</p>
+            <h4>Cancellations</h4>
+            <p>Orders may be cancelled for a full refund up to <strong>12 hours before</strong> the scheduled dispatch time. For same-day orders, please contact us immediately upon placing — we begin preparation quickly and may not be able to cancel once the artisan team has started your arrangement.</p>
+        </div>
+
+        <div class="pill-group reveal">
+            <div class="pill"><span class="dot"></span>48-Hour Quality Window</div>
+            <div class="pill"><span class="dot"></span>No-Quibble Policy</div>
+            <div class="pill"><span class="dot"></span>Full Refund or Replacement</div>
+            <div class="pill"><span class="dot"></span>No Return Required</div>
+            <div class="pill"><span class="dot"></span>Human Support Only</div>
+        </div>
+        </section>
+
+        <!-- ── CONTACT ── -->
+        <section class="info-section reveal" id="contact">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">We'd Love to <em>Hear</em> from You</h2>
+        <p class="section-lead">Whether you have a question, a custom order, a press enquiry, or simply want to say hello — our team is here and always happy to help.</p>
+
+        <div class="contact-channels reveal">
+            <div class="channel-card">
+            <div class="channel-icon">💬</div>
+            <h4>Live Chat</h4>
+            <p>Available Mon – Sat, 8am – 8pm. Average response time: under 3 minutes.</p>
+            <br/><a href="#">Start Chat →</a>
+            </div>
+            <div class="channel-card">
+            <div class="channel-icon">📧</div>
+            <h4>Email Us</h4>
+            <p>We reply to all emails within 4 hours during business hours.</p>
+            <br/><a href="mailto:hello@fleurandco.com">hello@fleurandco.com</a>
+            </div>
+            <div class="channel-card">
+            <div class="channel-icon">📞</div>
+            <h4>Call Us</h4>
+            <p>Speak directly to our team. Mon – Fri, 9am – 6pm.</p>
+            <br/><a href="tel:+442012345678">+44 20 1234 5678</a>
+            </div>
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:300;margin-bottom:28px;" class="reveal">Send Us a <em>Message</em></h3>
+        <form class="contact-grid reveal" onsubmit="handleForm(event)">
+            <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Sophie" required/>
+            </div>
+            <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Laurent" required/>
+            </div>
+            <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="hello@example.com" required/>
+            </div>
+            <div class="form-group">
+            <label>Phone (optional)</label>
+            <input type="tel" placeholder="+44 7700 000000"/>
+            </div>
+            <div class="form-group full">
+            <label>Enquiry Type</label>
+            <select>
+                <option>General Enquiry</option>
+                <option>Order Issue</option>
+                <option>Custom Arrangement</option>
+                <option>Wedding & Events</option>
+                <option>Press & Media</option>
+                <option>Careers</option>
+                <option>Wholesale</option>
+            </select>
+            </div>
+            <div class="form-group full">
+            <label>Message</label>
+            <textarea placeholder="Tell us how we can help — the more detail you share, the better we can assist you..."></textarea>
+            </div>
+            <div class="full">
+            <button type="submit" class="btn-primary" id="submitBtn">Send Message</button>
+            <div id="formSuccess" style="display:none;margin-top:18px;padding:16px 22px;background:var(--cream);border-radius:14px;font-size:.88rem;color:var(--text-light);">
+                🌸 Thank you! We've received your message and will be in touch within 4 hours.
+            </div>
+            </div>
+        </form>
+        </section>
+
+        <!-- ── CARE GUIDE ── -->
+        <section class="info-section reveal" id="care">
+        <div class="section-tag">Flower Care</div>
+        <h2 class="section-title">Make Your Blooms <em>Last</em></h2>
+        <p class="section-lead">With just a little love and attention, your Fleur & Co arrangement can look stunning for up to two weeks. Here is everything you need to know.</p>
+
+        <div class="care-grid reveal">
+            <div class="care-card">
+            <div class="care-icon">✂️</div>
+            <div>
+                <h4>Trim the Stems</h4>
+                <p>As soon as your flowers arrive, cut 2–3cm from each stem at a 45° angle. This creates a larger surface area for water absorption. Repeat every 2–3 days.</p>
+            </div>
+            </div>
+            <div class="care-card">
+            <div class="care-icon">💧</div>
+            <div>
+                <h4>Fresh Water Daily</h4>
+                <p>Change your vase water every day, or every other day at minimum. Use lukewarm — not cold — water. Add the included flower food sachet on day one.</p>
+            </div>
+            </div>
+            <div class="care-card">
+            <div class="care-icon">🌡️</div>
+            <div>
+                <h4>Cool Placement</h4>
+                <p>Keep flowers away from direct sunlight, radiators, and fruit bowls (fruit releases ethylene gas which accelerates wilting). A cool, bright spot is ideal.</p>
+            </div>
+            </div>
+            <div class="care-card">
+            <div class="care-icon">🍃</div>
+            <div>
+                <h4>Remove Leaves Below Water</h4>
+                <p>Strip any leaves that fall below the waterline — submerged foliage rots quickly and introduces bacteria that shortens your flowers' lifespan significantly.</p>
+            </div>
+            </div>
+            <div class="care-card">
+            <div class="care-icon">🌙</div>
+            <div>
+                <h4>Night-Time Cool-Down</h4>
+                <p>On warm evenings, move your arrangement to a cooler room overnight — even a bathroom or kitchen works well. Cooler temperatures dramatically extend vase life.</p>
+            </div>
+            </div>
+            <div class="care-card">
+            <div class="care-icon">🪣</div>
+            <div>
+                <h4>Keep the Vase Clean</h4>
+                <p>Rinse your vase with a small amount of white vinegar once a week to prevent bacteria build-up. A clean vase can add 2–3 extra days to your arrangement's life.</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="highlight-strip reveal">
+            <div class="hs-icon">💐</div>
+            <div>
+            <h4>Flower-Specific Care</h4>
+            <p>Different blooms have different needs. Roses love cool water and a single aspirin. Tulips continue to grow in the vase — trim every 2 days. Peonies open fastest in warm rooms. Sunflowers are thirsty — top up water daily.</p>
+            <a href="#contact">Ask Our Florists Directly</a>
+            </div>
+        </div>
+
+        <div class="prose reveal">
+            <h4>When to Arrange vs. Leave in Paper</h4>
+            <p>If your flowers arrive tightly budded, leave them in the paper wrapping with stems in a tall glass of water for 4–6 hours. This allows them to open naturally before you arrange them in a vase. Rushing this process can shock the stems.</p>
+            <h4>Dried & Preserved Flowers</h4>
+            <p>For any dried or preserved arrangements in your order, simply keep them away from humidity and direct sunlight. Dust gently with a soft brush once a month. With minimal care, preserved arrangements can last <strong>12–24 months</strong>.</p>
+        </div>
+        </section>
+
+    </div><!-- /content -->
+    </div><!-- /layout -->
+
+    <!-- Footer -->
+        <footer>
+            <div class="footer-bottom">
+                <span>© 2025 Fleur & Co. All rights reserved.</span>
+                <span>Privacy Policy · Terms of Service</span>
+            </div>
+        </footer>
+
+    <script src="info.js"></script>
+    </body>
+</html>

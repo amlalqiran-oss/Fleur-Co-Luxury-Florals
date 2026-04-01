@@ -1,6 +1,3 @@
-This is a professional README template tailored to your **Fleur & Co** project. It highlights the luxury aesthetic, the specific features of the site, and your technical skills as a developer.
-
-***
 
 # Fleur & Co – Luxury Florals 🌸
 

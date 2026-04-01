@@ -6,7 +6,7 @@ This is a professional README template tailored to your **Fleur & Co** project. 
 
 A premium, high-end e-commerce landing page for a luxury floral boutique. **Fleur & Co** blends elegant typography with a minimalist aesthetic to showcase curated floral arrangements and artisanal bouquets.
 
-![Project Preview](https://img.shields.io/badge/Status-Live-success) 
+
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://amlalqiran-oss.github.io/Fleur-Co-Luxury-Florals/)
 
 ## ✨ Key Features
